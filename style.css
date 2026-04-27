@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Card */
+.app {
+    background: white;
+    width: 380px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Input Section */
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Add Button */
+.add-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.add-btn:hover {
+    background: #45a049;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.filters button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    border: none;
+    background: #eee;
+    border-radius: 6px;
+}
+
+.filters button:hover {
+    background: #ddd;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each Task */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+li:hover {
+    background: #f1f1f1;
+}
+
+/* Task Text */
+.task-text {
+    flex: 1;
+}
+
+/* Done Style */
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Buttons Container */
+.btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+/* Individual Buttons */
+.btn {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.done-btn {
+    background: #2196F3;
+    color: white;
+}
+
+.edit-btn {
+    background: #ffc107;
+}
+
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.done::after {
+    content: " ✔";
+    color: green;
+    font-weight: bold;
+}
